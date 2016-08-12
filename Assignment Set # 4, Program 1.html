@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>*** PUT YOUR NAME AND ASSIGNMENT NUMBER HERE ***</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Student's Name: Artur Sachakov		 
+		// Date: 03/29/2016
+		// Assignment number: Assignment Set # 4, Program # 1.
+		// Brief description: Program that returns power of any integer.
+		
+		
+		/********* GLOBAL VARIABLES *********/
+		// Enter any global variable in this region
+		var BR = "<br />";
+		var ES = " ";
+		/********* FUNCTIONS *********/
+		// Enter any functions in this region
+		function integerPower(base, power)		//function IntegerPower
+		{
+			var result = 1;	
+			for (var i = 0; i < power; i++)		//for loop 
+			{
+				
+				result = (result * base);
+								
+			}
+			return result;
+			
+					}
+
+	
+   
+
+
+
+		/********* MAIN *********/
+		function main()
+		{
+			base = prompt("Please enter the base number:",ES);
+   			base = parseInt(base);
+   			document.write("This is the base number: " + ES + ES + base + BR);
+   			power = prompt("Please enter the exponent number:",ES);
+   			power = parseInt(power);
+   			document.write("This is the exponent number: " + ES + power + BR);
+							
+		}	
+		// This line calls main, don't change it:
+		main();
+	</script>
+</head>
+
+<body>
+<center>
+<h1>Power of any integer<br></h1>
+<hr>
+<form name = myForm>
+<button onClick="alert(integerPower(base, power))">Click for Result</button><br /><br />
+
+
+</form>
+
+</center>
+</body>
+</html>
